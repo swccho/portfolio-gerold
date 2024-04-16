@@ -1,7 +1,23 @@
 <template>
   <div class="homepage">
+
+    <button type="button" class="back-to-top-btn" @click="backToTop()">
+      <img src="../assets/images/up-arrow.png" alt="up-arrow">
+    </button>
+
     <!--Hero section-->
     <div class="hero-section">
+
+      <!--Intro text-->
+      <!--      <div class="intro_text">
+              <svg viewBox="0 0 1320 300">
+                <text x="50%" Y="50%" text-anchor="middle">
+                  HI
+                </text>
+              </svg>
+            </div>-->
+
+
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
@@ -619,6 +635,25 @@ export default {
   },
   mounted() {
     mixitup('.mix-container');
+    window.addEventListener('scroll', this.activeFixedBtn);
+  },
+  methods: {
+    /*Function to active the fixed btn*/
+    activeFixedBtn() {
+      let btn = document.querySelector('.back-to-top-btn')
+      if (window.scrollY > 200) {
+        btn.classList.add('active')
+      } else {
+        btn.classList.remove('active')
+      }
+    },
+
+    /*Function to get back to top*/
+    backToTop() {
+      console.log('hey', window.scrollY)
+
+      window.scrollTo(0, 0);
+    }
   }
 }
 </script>
