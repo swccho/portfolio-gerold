@@ -16,7 +16,7 @@
     animation-fill-mode: both;
     width: 100%;
     transition: 0.3s;
-    padding: 15px 0;
+    padding: 0;
     box-shadow: 0 0 30px rgba(135, 80, 247, 0.2);
   }
 
@@ -29,6 +29,7 @@
     font-weight: 500;
     transition: .3s all ease-in-out;
     color: var(--theme-secondary);
+
 
     img {
       width: 60px;

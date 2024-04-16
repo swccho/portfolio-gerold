@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-12 text-center">
+        <div class="col-12 text-center" >
           <div class="footer-logo mb-4">
             <a href="javascript:void(0)">
               <img class="img-fluid width-75 height-75" src="../../assets/images/logo-dark.png" alt="logo">

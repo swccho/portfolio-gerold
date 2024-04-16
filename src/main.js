@@ -14,4 +14,8 @@ import router from "@/router/router";
 import VueSplide from '@splidejs/vue-splide';
 
 
-createApp(App).use(router, VueSplide).mount('#app')
+// importing AOS css style globally
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+createApp(App).use(router, VueSplide,AOS.init()).mount('#app')

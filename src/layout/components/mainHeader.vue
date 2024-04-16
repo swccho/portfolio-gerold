@@ -3,7 +3,7 @@
     <div class="container p-0">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid p-0 bg-theme">
-          <a class="navbar-brand ps-2" href="javascript:void(0)">
+          <a class="navbar-brand ps-2" href="mailto:mail@gerolddesign.com">
             <img class="me-4" src="../../assets/images/logo-dark.png" alt="logo">
             <span class="d-lg-inline d-none">mail@gerolddesign.com</span>
           </a>
