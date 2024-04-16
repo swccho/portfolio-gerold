@@ -1,0 +1,39 @@
+.testimonial-section {
+  padding: 120px 0;
+  background-color: var(--off-white);
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
+
+  .testimonial-slider {
+    .each-testimonial {
+      border-radius: 15px;
+      padding: 25px;
+      background-color: var(--white);
+
+      .logo-box {
+        max-width: 100px;
+        width: 100%;
+      }
+
+      .image-box {
+        width: 40%;
+        max-width: 120px;
+
+        img {
+          border-radius: 5px 5px 5px 125px;
+        }
+      }
+    }
+
+    .splide__pagination {
+      bottom: -40px;
+
+      .splide__pagination__page {
+        &.is-active {
+          background-color: var(--theme-primary);
+        }
+      }
+    }
+  }
+}

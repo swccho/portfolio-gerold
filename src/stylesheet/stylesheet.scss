@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+  --theme-primary: #8750f7;
+  --theme-secondary: #2a1454;
+  --theme-accent-2: #140c1c;
+  --theme-grad: linear-gradient(to right, var(--theme-primary) 0%, var(--theme-secondary) 100%);
+  --black: #000;
+  --white: #fff;
+  --off-white: #f6f3fc;
+  --gray-1: #747779;
+}
+
+body {
+  font-size: 15px;
+  scroll-behavior: smooth;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--theme-secondary);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--theme-primary);
+  }
+}
+
+/*Layout*/
+@import "layout/layout";
+
+/*Pages*/
+@import "global";
+@import "pages/homepage";
+
+// splide theme
+@import '@splidejs/vue-splide/css';
