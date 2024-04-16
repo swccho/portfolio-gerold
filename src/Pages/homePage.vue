@@ -155,7 +155,7 @@
                     that connect billions of people</p>
                 </div>
                 <div class="icon">
-                  <i class="fa-solid fa-arrow-up"></i>
+                  <img class="width-20 height-20 img-fluid" src="../assets/images/up-right-arrow.png" alt="">
                 </div>
               </div>
 
@@ -171,7 +171,7 @@
                     that connect billions of people</p>
                 </div>
                 <div class="icon">
-                  <i class="fa-solid fa-arrow-up"></i>
+                  <img class="width-20 height-20 img-fluid" src="../assets/images/up-right-arrow.png" alt="">
                 </div>
               </div>
 
@@ -187,7 +187,7 @@
                     that connect billions of people</p>
                 </div>
                 <div class="icon">
-                  <i class="fa-solid fa-arrow-up"></i>
+                  <img class="width-20 height-20 img-fluid" src="../assets/images/up-right-arrow.png" alt="">
                 </div>
               </div>
 
@@ -203,7 +203,7 @@
                     that connect billions of people</p>
                 </div>
                 <div class="icon">
-                  <i class="fa-solid fa-arrow-up"></i>
+                  <img class="width-20 height-20 img-fluid" src="../assets/images/up-right-arrow.png" alt="">
                 </div>
               </div>
 
