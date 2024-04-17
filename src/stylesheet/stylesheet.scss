@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
 
 :root {
   --theme-primary: #8750f7;
   --theme-secondary: #2a1454;
+  --theme-accent-1: #0f0715;
   --theme-accent-2: #140c1c;
   --theme-grad: linear-gradient(to right, var(--theme-primary) 0%, var(--theme-secondary) 100%);
   --black: #000;
+  --black-2: #050709;
   --white: #fff;
   --off-white: #f6f3fc;
   --gray-1: #747779;
+  --ff-russo: "Russo One", sans-serif;
 }
 
 body {
@@ -35,5 +40,6 @@ body {
 @import "global";
 @import "pages/homepage";
 
-// splide theme
+// Plugins
 @import '@splidejs/vue-splide/css';
+

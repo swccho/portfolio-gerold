@@ -1,8 +1,27 @@
 .header {
   padding: 40px 0 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+
+  &.fixed-header {
+    position: fixed;
+    background-color: var(--off-white);
+    top: 0;
+    opacity: 1;
+    animation: bounceInDown 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    width: 100%;
+    transition: 0.3s;
+    padding: 0;
+    box-shadow: 0 0 30px rgba(135, 80, 247, 0.2);
+  }
 
   @media screen and (max-width: 991px) {
-    padding: 20px 0 15px;
+    padding: 15px 0 15px;
   }
 
   .navbar-brand {
@@ -10,6 +29,7 @@
     font-weight: 500;
     transition: .3s all ease-in-out;
     color: var(--theme-secondary);
+
 
     img {
       width: 60px;
@@ -28,7 +48,6 @@
     justify-content: center;
     align-items: end;
     flex-direction: column;
-    margin-left: auto;
 
     &:focus {
       border: none;
@@ -38,7 +57,7 @@
 
     span {
       @media screen and (min-width: 992px) {
-         display: none;
+        display: none;
       }
       text-align: end;
       border-radius: 5px;
@@ -123,5 +142,46 @@
         }
       }
     }
+  }
+
+
+}
+
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }

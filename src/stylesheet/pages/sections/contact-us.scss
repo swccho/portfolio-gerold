@@ -17,6 +17,10 @@
     .form-group {
       .form-control, .form-select {
         background-color: var(--off-white);
+
+        &:focus{
+          border-color: var(--theme-primary);
+        }
       }
     }
 
